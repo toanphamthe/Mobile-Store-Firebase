@@ -9,14 +9,7 @@ import { ContactUs1 } from './ContactUs';
 import { AllMobileCards } from './AllMobileCards';
 import { GiftMobile } from './GiftMobile';
 import { BottomMobileinfo } from './BottomStoreInfo';
-// import { HomeBoat } from './HomeBoat';
-// import { Personalisation } from './Personalisation';
-// import { GiftBoat } from './GiftBoat';
-// import { CategoriesBoat } from './Categories';
-// import { Corporate } from './Corporate';
-// import { Bottominfo } from './Bottominfo';
-// import { WatchBoat } from './Watch';
-// import { Allcards } from './AllCards';
+import { CustomerManagement } from './CustomerManagement';
 
 export function NavigateMobile() {
   return (
@@ -33,7 +26,7 @@ export function NavigateMobile() {
           <Route path="/Gifts" element={<GiftMobile/>} />
           <Route path="/ContactUs" element={<ContactUs1/>} />
           <Route path="/detailwatch/:id" element={<AllMobileCards/>} />
-          
+          <Route path="/CustomerManagement" element={<CustomerManagement />} />
         </Routes>
         <BottomMobileinfo/>
       </Router>
